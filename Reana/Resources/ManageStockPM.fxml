@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.summit_power_company_.ReanaManagingDirector.ManageStockPMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="184.0" layoutY="14.0" prefHeight="42.0" prefWidth="147.0" style="-fx-background-color: Lime; -fx-border-color: green;" text="STOCK MANAGE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="56.0" layoutY="83.0" text="Current Available Raw Meterial's Name:" />
+        <Label layoutX="56.0" layoutY="111.0" text="Current Available Raw Meterial's Quantity:" />
+        <Label layoutX="56.0" layoutY="141.0" text="Newly Entry Raw Meterial's Name:" />
+        <Label layoutX="56.0" layoutY="169.0" text="Newly Entry Raw Meterial's Quantity:" />
+        <Label layoutX="56.0" layoutY="200.0" text="Stock out Raw Meterial's Name:" />
+        <Label layoutX="56.0" layoutY="228.0" text="Stock out Raw Meterial's Quantity:" />
+        <TextField fx:id="currentRawMeterialNameTextField" layoutX="286.0" layoutY="78.0" prefHeight="26.0" prefWidth="128.0" />
+        <TextField fx:id="currentRawMeterialQuantityTextField" layoutX="286.0" layoutY="106.0" prefHeight="26.0" prefWidth="128.0" />
+        <TextField fx:id="newlyEntryRawName" layoutX="286.0" layoutY="136.0" prefHeight="26.0" prefWidth="128.0" />
+        <TextField fx:id="newlyEntryRawQuantity" layoutX="286.0" layoutY="164.0" prefHeight="26.0" prefWidth="128.0" />
+        <TextField fx:id="stockOutRawName" layoutX="286.0" layoutY="195.0" prefHeight="26.0" prefWidth="128.0" />
+        <TextField fx:id="stockOutRawQuantity" layoutX="286.0" layoutY="223.0" prefHeight="26.0" prefWidth="128.0" />
+        <Button layoutX="184.0" layoutY="260.0" mnemonicParsing="false" onAction="#addRecordButtonOnClicked" text="Add Record" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2dac8e" height="499.0" layoutX="510.0" stroke="BLACK" strokeType="INSIDE" width="157.0" />
+        <Button layoutX="174.0" layoutY="472.0" mnemonicParsing="false" onAction="#goToActivitiesPageButtonOnClicked" text="Go To Activities Page" />
+        <TextArea fx:id="recordTextArea" layoutX="102.0" layoutY="300.0" prefHeight="162.0" prefWidth="254.0" />
+    </children>
+
+</AnchorPane>

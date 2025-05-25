@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.summit_power_company_.ReanaManagingDirector.CommunicationwithStackHoldersPMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="56.0" layoutY="30.0" prefHeight="27.0" prefWidth="591.0" style="-fx-background-color: aqua;" text="Communication with StackHolders-i) Quality Control Manager ii) Supply Chain Manager">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="35.0" layoutY="91.0" prefHeight="18.0" prefWidth="105.0" text="Meeting Schedule:" />
+        <DatePicker fx:id="datePicker" layoutX="141.0" layoutY="87.0" prefHeight="26.0" prefWidth="156.0" />
+        <Button layoutX="115.0" layoutY="147.0" mnemonicParsing="false" onAction="#addRecordButtonOnClicked" text="Add Record" />
+        <TextArea fx:id="recordTextArea" layoutX="55.0" layoutY="193.0" prefHeight="156.0" prefWidth="200.0" />
+        <Button layoutX="402.0" layoutY="96.0" mnemonicParsing="false" onAction="#sendMsgButtonOnClicked" text="Send Provide Project Status Msg">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Line endX="-1.79998779296875" endY="240.0" layoutX="337.0" layoutY="160.0" startX="-1.79998779296875" startY="-65.60000610351562" />
+        <Label fx:id="msgLabel" layoutX="377.0" layoutY="147.0" prefHeight="78.0" prefWidth="208.0" style="-fx-background-color: yellow;" text="Label" />
+        <Button layoutX="420.0" layoutY="258.0" mnemonicParsing="false" onAction="#shareMsgButtonOnClicked" text="Share FeedBack Msg">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label fx:id="shareMsgLabel" layoutX="389.0" layoutY="304.0" prefHeight="78.0" prefWidth="208.0" style="-fx-background-color: yellow;" text="Label" />
+        <Button layoutX="273.0" layoutY="433.0" mnemonicParsing="false" onAction="#goToActivitiesPageButtonOnClicked" text="Go To Activities Page" />
+    </children>
+
+</AnchorPane>

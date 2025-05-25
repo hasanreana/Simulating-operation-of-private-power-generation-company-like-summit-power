@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Line?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.summit_power_company_.ReanaManagingDirector.CheckQualityOfProductionPMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="223.0" layoutY="14.0" prefHeight="36.0" prefWidth="276.0" style="-fx-background-color: orange;" text="Check Quality Of Production Performance">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="71.0" prefHeight="18.0" prefWidth="177.0" text="Approve Raw Material's Name:" />
+        <Label layoutX="60.0" layoutY="102.0" text="Approve Raw Material's Quantity:" />
+        <TextField fx:id="approveRawNameTextField" layoutX="244.0" layoutY="67.0" prefHeight="26.0" prefWidth="127.0" />
+        <TextField fx:id="approveRawQuantityTextField" layoutX="244.0" layoutY="97.0" prefHeight="26.0" prefWidth="127.0" />
+        <Button layoutX="157.0" layoutY="162.0" mnemonicParsing="false" onAction="#addRecordButtonOnClicked" text="Add Record" />
+        <Line endX="7.5999755859375" endY="197.79998779296875" layoutX="398.0" layoutY="215.0" startX="7.5999755859375" startY="-143.8000030517578" stroke="#abb521" strokeWidth="3.0" />
+        <Button layoutX="729.0" layoutY="153.0" mnemonicParsing="false" onAction="#sendButtonOnClicked" prefHeight="26.0" prefWidth="68.0" text="Send  " textFill="#285959">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Label fx:id="msgLabel" layoutX="446.0" layoutY="119.0" prefHeight="112.0" prefWidth="259.0" style="-fx-background-color: Yellow;" text="Msg" />
+        <Button layoutX="469.0" layoutY="268.0" mnemonicParsing="false" onAction="#standardsProductQualityButtonOnClicked" prefHeight="87.0" prefWidth="310.0" style="-fx-border-color: blue;" text="Standards of manufactured product's Quality" textFill="#285959">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Button>
+        <Button layoutX="344.0" layoutY="455.0" mnemonicParsing="false" onAction="#goToactivitiesPageButtonOnClicked" text="Go to Activities Page" />
+        <Label layoutX="446.0" layoutY="71.0" prefHeight="36.0" prefWidth="298.0" text="Write Your Suggetions for Improve Quality">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="recordTextArea" layoutX="97.0" layoutY="231.0" prefHeight="200.0" prefWidth="200.0" />
+    </children>
+
+</AnchorPane>

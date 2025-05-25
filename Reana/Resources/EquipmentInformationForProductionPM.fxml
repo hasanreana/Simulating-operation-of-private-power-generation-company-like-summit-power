@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.summit_power_company_.ReanaManagingDirector.EquipmentInformationForProductionPMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="151.0" layoutY="23.0" prefHeight="33.0" prefWidth="340.0" style="-fx-background-color: orange;" text="Equipment Information for Production of a Product">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="59.0" layoutY="76.0" text="Available Equipment Name:" />
+        <Label layoutX="55.0" layoutY="107.0" text="Available Equipment Quantity:" />
+        <Label layoutX="55.0" layoutY="140.0" text="Damage Equipment Name:" />
+        <Label layoutX="54.0" layoutY="167.0" text="Damage Equipment Quantity:" />
+        <TextField fx:id="availableEquipNameTextField" layoutX="226.0" layoutY="72.0" />
+        <TextField fx:id="availableEquipQuantityTextField" layoutX="226.0" layoutY="103.0" />
+        <TextField fx:id="damageEquipNameTextField" layoutX="225.0" layoutY="136.0" />
+        <TextField fx:id="damageEquipQuantityTextField" layoutX="226.0" layoutY="163.0" />
+        <Button layoutX="72.0" layoutY="268.0" mnemonicParsing="false" onAction="#activeEquipQuantityButtonOnClicked" text="Active Equipment Quantity" />
+        <Label fx:id="viewLabel" layoutX="38.0" layoutY="313.0" prefHeight="54.0" prefWidth="454.0" style="-fx-background-color: yellow;" text="View" />
+        <Label layoutX="51.0" layoutY="196.0" text="New Equipment Name:" />
+        <Label layoutX="51.0" layoutY="229.0" text="New Equipment Quantity:" />
+        <TextField fx:id="newEquipNameTextField" layoutX="225.0" layoutY="192.0" />
+        <TextField fx:id="newEquipQuantityTextField" layoutX="226.0" layoutY="225.0" />
+        <Button layoutX="270.0" layoutY="268.0" mnemonicParsing="false" onAction="#totalEquipQuantityButtonOnClicked" text="Total Equipment Quantity" />
+        <Button layoutX="250.0" layoutY="418.0" mnemonicParsing="false" onAction="#goToActivitiesPage" text="Go To Activities Page" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#51a2b5" height="458.0" layoutX="557.0" stroke="BLACK" strokeType="INSIDE" width="160.0" />
+    </children>
+
+</AnchorPane>

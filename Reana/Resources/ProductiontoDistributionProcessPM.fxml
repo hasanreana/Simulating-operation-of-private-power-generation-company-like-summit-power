@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.summit_power_company_.ReanaManagingDirector.ProductiontoDistributionProcessPMController">
+   <children>
+      <Label layoutX="152.0" layoutY="11.0" prefHeight="47.0" prefWidth="364.0" style="-fx-background-color: Aqua;" text=" From Production To Distribution Process of a Product">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="110.0" prefHeight="18.0" prefWidth="114.0" text="Production Name:" />
+      <Label layoutX="52.0" layoutY="147.0" prefHeight="18.0" prefWidth="114.0" text="Production Quantity:" />
+      <TextField fx:id="productionNameTextField" layoutX="167.0" layoutY="106.0" prefHeight="26.0" prefWidth="134.0" />
+      <TextField fx:id="productionQuantityTextField" layoutX="167.0" layoutY="143.0" prefHeight="26.0" prefWidth="134.0" />
+      <Button layoutX="194.0" layoutY="209.0" mnemonicParsing="false" onAction="#addRecordButtonOnClicked" text="Add Record" />
+      <Button layoutX="410.0" layoutY="84.0" mnemonicParsing="false" onAction="#msgSendButtonOnClicked" text="Send A Special Requirement Msg :" />
+      <Label fx:id="msgLabel" layoutX="421.0" layoutY="123.0" prefHeight="66.0" prefWidth="165.0" style="-fx-background-color: Yellow;" text="Msg" />
+      <Label layoutX="380.0" layoutY="212.0" prefHeight="32.0" prefWidth="261.0" style="-fx-background-color: orange;" text="Required To Complete Production Time">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="261.0" prefHeight="18.0" prefWidth="122.0" text="Production Start Time:" />
+      <Label layoutX="353.0" layoutY="299.0" prefHeight="18.0" prefWidth="114.0" text="Production End Time:" />
+      <DatePicker fx:id="startTimeDatePicker" layoutX="484.0" layoutY="259.0" />
+      <DatePicker fx:id="endTimeDatePicker" layoutX="484.0" layoutY="296.0" />
+      <Button layoutX="489.0" layoutY="342.0" mnemonicParsing="false" onAction="#addDateButtonOnClicked" text="Add Record" />
+      <TextArea fx:id="dateTextArea" layoutX="403.0" layoutY="378.0" prefHeight="114.0" prefWidth="251.0" />
+      <Line endX="95.79998779296875" endY="258.3999938964844" layoutX="225.0" layoutY="244.0" startX="95.79998779296875" startY="-157.60000610351562" stroke="#c14a0a" strokeMiterLimit="13.0" strokeWidth="2.0" />
+      <Line endX="220.39996337890625" layoutX="430.0" layoutY="199.0" startX="-61.20001220703125" stroke="#ae1313" strokeWidth="3.0" />
+      <Button layoutX="57.0" layoutY="503.0" mnemonicParsing="false" onAction="#goToActivitiesButtonOnClicked" text="Go to Activities Page" />
+      <TableView fx:id="tableview" layoutX="45.0" layoutY="268.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="nameTC" prefWidth="110.39992904663086" text="Name" />
+            <TableColumn fx:id="quantityTC" prefWidth="88.80000305175781" text="Quantity" />
+         </columns>
+      </TableView>
+      <Label fx:id="outputLable" layoutX="13.0" layoutY="204.0" prefHeight="47.0" prefWidth="166.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.summit_power_company_.ReanaManagingDirector.FileReadPMController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="24.0" layoutY="94.0" prefHeight="301.0" prefWidth="387.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="428.0" layoutY="94.0" mnemonicParsing="false" onAction="#readFromFile" prefHeight="122.0" prefWidth="168.0" text="Read from file" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" prefHeight="54.0" prefWidth="79.0" text="←" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="428.0" layoutY="342.0" mnemonicParsing="false" onAction="#logOut" prefHeight="54.0" prefWidth="168.0" text="Log Out" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="168.0" layoutY="16.0" text="File Reading">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" alignment="CENTER" layoutX="428.0" layoutY="260.0" prefHeight="77.0" prefWidth="168.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

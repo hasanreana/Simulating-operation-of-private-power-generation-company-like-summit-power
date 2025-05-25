@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.summit_power_company_.ReanaManagingDirector.UsersController">
+   <children>
+      <Label layoutX="217.0" layoutY="56.0" prefHeight="39.0" prefWidth="181.0" style="-fx-background-color: orange;" text="USERS NAME" textFill="#cc0d0d">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="185.0" layoutY="149.0" mnemonicParsing="false" onAction="#mdButtonOnClick" prefHeight="50.0" prefWidth="246.0" style="-fx-background-color: pink;" text="Managing Director">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="185.0" layoutY="214.0" mnemonicParsing="false" onAction="#pmButtonOnClick" prefHeight="46.0" prefWidth="246.0" style="-fx-background-color: pink;" text="Production Manager">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="349.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" text="LogOut" />
+   </children>
+</AnchorPane>
